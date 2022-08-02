@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "build2": "NITRO_PRESET=node nuxt build",
+    "dev": "NUXT_APP_BASE_URL=/fcp/tst nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "NUXT_APP_BASE_URL=/fcp/tst node ./.output/server/index.mjs",
+    "start:express": "NUXT_APP_BASE_URL=/fcp/tst node ./index.mjs"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.6"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

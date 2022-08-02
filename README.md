@@ -1,42 +1,16 @@
-# Nuxt 3 Minimal Starter
+# Bug reproduction
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
-## Setup
+1. npm install
+2. npm run build2 ( build using ‘node’ preset )
+3. npm run start:express
+4. In browser, go to:  <http://localhost:8082/fcp/tst>
 
-Make sure to install the dependencies:
 
-```bash
-# yarn
-yarn install
+Notice a blank page and the following error in the console:
 
-# npm
-npm install
+`Failed to load module script: Expected a JavaScript module script but the server responded with a MIME type of "text/html". Strict MIME type checking is enforced for module scripts per HTML spec.`
 
-# pnpm
-pnpm install --shamefully-hoist
-```
 
-## Development Server
 
-Start the development server on http://localhost:3000
 
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
